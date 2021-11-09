@@ -1,0 +1,638 @@
+/* Для шриштів: налаштування шрифта+кирилиця, підключаємо завжди! Чистимо непотрібні розміри шрифта в посиланні, для кращої оптимізації.
+ &display=swap&subset=cyrillic-ext */
+
+/*@import url("https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap&subset=cyrillic-ext");
+
+/*@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "Polaris";
+  src: url("../fonts/Polaris.woff2") format("woff2"), url("../fonts/Polaris.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-CaptionBold.woff2") format("woff2"), url("../fonts/PTSans-CaptionBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Caption.woff2") format("woff2"), url("../fonts/PTSans-Caption.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+/* Обнулення СТИЛІВ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1;
+  color: #4b4b4b;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+.main {
+  flex: 1 1 auto;
+}
+.footer {
+  background-color: #5d62b5;
+}
+
+/* --------------- */
+[class*="__container"] {
+  box-sizing: content-box;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+.our-promise {
+  padding: 86px 0px 122px 0px;
+}
+.our-promise__titles {
+  margin: 0px 0px 68px 0px;
+}
+
+.title {
+}
+.title :not(:last-child) {
+  margin: 0px 0px 33px 0px;
+}
+.title__sub-title {
+  background: url(../img/CarRepairandDoggie/icon/icon.svg) 0 -2px no-repeat;
+  padding: 0px 0px 0px 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #5d62b5;
+}
+.title__main-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  color: #000000;
+}
+
+.our-promise__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -12px 0px -12px;
+  row-gap: 24px;
+}
+.our-promise__card {
+  flex: 1 1 33.333%;
+  padding: 0px 12px 0px 12px;
+  min-width: 324px;
+}
+
+.item-card {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 23px;
+}
+.item-card__img {
+  flex: 0 0 63px;
+}
+.item-card__body {
+}
+.item-card__body :not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.item-card__title {
+}
+.item-title {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.36;
+  color: #f2726f;
+}
+.item-card__text {
+}
+.item-text {
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+.our-services {
+  padding: 110px 0px 113px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.our-services::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../img/CarRepairandDoggie/our_services/bg_services.webp) 0 -450px no-repeat,
+    url(../img/CarRepairandDoggie/our_services/bg_services.png) 0 -450px no-repeat;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(200px, 0px);
+}
+.our-services__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-services__titles {
+  margin: 0px 0px 78px 0px;
+}
+.title {
+}
+.title__sub-title {
+}
+.title__main-title {
+}
+
+.our-services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.our-services__cards:not(:last-child) {
+  margin-bottom: 66px;
+}
+.our-services__card {
+  flex: 1 1 33.333%;
+  padding: 0px 12px 0px 12px;
+  min-width: 324px;
+}
+
+.item__content {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 43px 50px 43px;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.item__content:hover {
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.24);
+}
+.item__img {
+  flex: 0 0 63px;
+  width: 63px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.item__img img {
+  max-width: 100%;
+  max-height: 63px;
+}
+.item__img:not(:last-child) {
+  margin: 0px 0px 33px 0px;
+}
+.item__title {
+}
+.item__title:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.item__text {
+  flex: 1 1 auto;
+}
+.item__text:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.item__link {
+  font-weight: 700;
+  color: #f2726f;
+  transition-duration: 0.3s;
+}
+.item__link:hover {
+  font-weight: 900;
+}
+.our-services__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #f2726f;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 12px 24px 12px 24px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.our-services__link:hover {
+  background-color: #ffffff;
+  border: 1px solid #f2726f;
+  color: #f2726f;
+}
+.our-impact {
+  background-color: #29c3be;
+  padding: 0px 0px 212px 0px;
+}
+
+.our-impact__container {
+  position: relative;
+}
+.our-impact__container::before {
+  content: "";
+  width: 68%;
+  height: 100%;
+  background: url(../img/CarRepairandDoggie/our_impact/bg.png) 0 0 / 100% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.our-impact__body {
+  display: flex;
+  margin: 0px -15px;
+  position: relative;
+}
+.our-impact__body:not(:last-child) {
+  margin-bottom: 79px;
+}
+.our-impact__content {
+  align-self: flex-end;
+  flex: 0 0 50%;
+  padding: 20px 15px 0px 15px;
+}
+
+.our-impact__titles {
+  max-width: 411px;
+}
+.title {
+}
+.title__sub-title {
+}
+.title__sub-title_style {
+  color: #ffffff;
+  background: url(../img/CarRepairandDoggie/our_impact/icon.svg) 0 -2px no-repeat;
+}
+.title__main-title {
+}
+.title__main-title_style {
+  color: #ffffff;
+}
+.our-impact__img {
+  flex: 0 0 50%;
+  margin: -7.61% 0px 0px 0px;
+  padding: 0px 15px;
+}
+.our-impact__img img {
+  border-radius: 40px;
+  max-width: 100%;
+  position: relative;
+}
+
+.our-impact__cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -12px 0px -12px;
+  row-gap: 24px;
+  align-items: flex-start;
+}
+.our-impact__card {
+  flex: 1 1 25%;
+  padding: 0px 12px 0px 12px;
+}
+.items-card {
+  display: flex;
+  column-gap: 11px;
+  align-items: flex-start;
+}
+.items-card__icon {
+  flex: 0 1 76px;
+}
+.items-card__body {
+  align-self: center;
+  flex: 0 1 100%;
+  max-width: 151px;
+}
+.items-card__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.16;
+  color: #ffffff;
+}
+.items-card__title:not(:last-child) {
+  margin: 0px 0px 3px 0px;
+}
+.items-card__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #5d62b5;
+}
+.appointment {
+  margin: -72px 0px 0px 0px;
+}
+.appointment__container {
+  background-color: #5d62b5;
+  border-radius: 20px;
+  padding: 43px 76px 46px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+.appointment__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #ffffff;
+  flex: 0 1 50%;
+  align-items: center;
+}
+
+.appointment__button {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+.appointment__button a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  align-self: center;
+  text-align: center;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #f2726f;
+  padding: 12px 34px 12px 34px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.appointment__button a:hover {
+  background-color: #ffffff;
+  border: 1px solid #f2726f;
+  color: #f2726f;
+}
+
+.logoispum {
+  padding: 88px 0px 98px 0px;
+  background-color: #f5f5f5;
+}
+.logoispum__container {
+}
+.logoispum__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -20px 0px -20px;
+  row-gap: 30px;
+}
+.logo-items {
+  flex: 0 1 33.333%;
+  padding: 0px 20px 0px 20px;
+}
+.item-logo {
+}
+.item-logo__labe {
+  background: url(../img/CarRepairandDoggie/footer/logo/logo.svg) 0 0 no-repeat;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  padding: 0px 0px 0px 50px;
+  height: 40px;
+  margin: 0px 0px 23px 0px;
+}
+.item-logo__text {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.15px;
+  max-width: 235px;
+}
+.item-logo__text:not(:last-child) {
+  margin: 0px 0px 33px 0px;
+}
+.logo-items__item {
+}
+.logos-icon {
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+}
+.logos-icon img:hover {
+  border: 1px solid #f2726f;
+  border-radius: 2px;
+}
+
+.logos-icon__fb {
+}
+.logos-icon__fb:not(:last-child) {
+  margin: 0px 18px 0px 0px;
+}
+.logos-icon__twit {
+}
+.logos-icon__twit:not(:last-child) {
+  margin: 0px 18px 0px 0px;
+}
+.logos-icon__inst {
+}
+.logos-icon__inst:not(:last-child) {
+  margin: 0px 18px 0px 0px;
+}
+.logos-icon__youtube {
+}
+.logos-icon__youtube:not(:last-child) {
+  margin: 0px 18px 0px 0px;
+}
+
+.link-items {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.15px;
+  margin: 0px 0px 28px 0px;
+  text-transform: uppercase;
+}
+.link-items__item {
+}
+.link-items__column {
+  display: flex;
+  column-gap: 70px;
+}
+
+.link-items__list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.15px;
+}
+.link-items__list a {
+  color: #4b4b4b;
+}
+.link-items__list a:hover {
+  color: #f2726f;
+  transition-duration: 0.3s;
+}
+.link-items__list:not(:last-child) {
+  margin: 0px 0px 11px 0px;
+}
+.item-logo_style {
+  display: flex;
+  justify-content: center;
+}
+.link-items_style {
+}
+.logo-items {
+}
+.item-logo {
+}
+.contact-items {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  text-transform: uppercase;
+  letter-spacing: 0.15px;
+}
+.contact-items:not(:last-child) {
+  margin: 0px 0px 28px 0px;
+}
+.contact-items__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.15px;
+  max-width: 237px;
+}
+.contact-items__item a {
+  color: #4b4b4b;
+}
+.contact-items__item :hover {
+  color: #f2726f;
+  transition-duration: 0.3s;
+  transition-delay: 0.2s;
+}
+.contact-items__list {
+}
+.contact-items__list:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.contact-items__list_place {
+  background: url(../img/CarRepairandDoggie/footer/contact/place.svg) 0 3px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+.contact-items__list_place:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.contact-items__list_tel {
+  background: url(../img/CarRepairandDoggie/footer/contact/smartphone.svg) 0 3px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+.contact-items__list_tel:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.contact-items__list_mail {
+  background: url(../img/CarRepairandDoggie/footer/contact/email.svg) 0 3px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+.contact-items__list_mail:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.contact-items__list_timer {
+  background: url(../img/CarRepairandDoggie/footer/contact/timer.svg) 0 3px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+.contact-items__list_timer:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.end {
+  padding: 24px 0px 19px 0px;
+}
+.end__container {
+}
+.end__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 0px -15px;
+}
+.body-end {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+.body-end__tag {
+  flex: 0 1 50%;
+  padding: 0px 15px 0px 15px;
+}
+.body-end__privacy {
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: flex-end;
+  padding: 0px 15px 0px 15px;
+}
